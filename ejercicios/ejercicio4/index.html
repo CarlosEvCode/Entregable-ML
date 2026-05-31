@@ -1,14 +1,32 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejercicio 4</title>
-    <link rel="stylesheet" href="../../css/ejercicios.css">
-</head>
-<body>
-    <div class="exercise-container">
-        <h1>Ejercicio 4: Teachable Machine</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 4: Teachable Machine</title>
+    <link rel="stylesheet" href="../../css/ejercicios.css" />
+
+    <!-- Librería P5.js-->
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.10/lib/p5.min.js"></script>
+
+    <!-- Librería ML5.js-->
+    <script src="https://unpkg.com/ml5@0.12.2/dist/ml5.min.js"></script>
+  </head>
+  <body>
+    <div class="exercise-container" style="max-width: 760px">
+      <h1>Teachable Machine</h1>
+      <p>Muestra el objeto para identificarlo</p>
+
+      <!-- Contenedor del Canvas -->
+      <div id="canvas-container"></div>
+
+      <div class="results-panel">
+        <div id="resultado-etiqueta">Cargando modelo...</div>
+        <div id="resultado-confianza"></div>
+      </div>
     </div>
-</body>
+
+    <!-- Script de la logica -->
+    <script src="app.js"></script>
+  </body>
 </html>
